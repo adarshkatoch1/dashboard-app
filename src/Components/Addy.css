@@ -1,0 +1,48 @@
+body 
+{
+background-color: #6e5cb0;
+}
+
+form 
+{
+    height: 480px;
+    width: 430px;
+    margin: auto;
+      margin-top: auto;
+    margin-top: auto;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 9px;
+    padding: 46px;
+}
+
+form input
+{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    width: 335px;
+    margin: 0px;
+
+}
+
+form label {
+    display: inline-block;
+    margin: 11px;
+    width: 351px;
+    margin: auto;
+      margin-bottom: auto;
+    margin-bottom: 2px;
+}
+
+.btn
+{
+    margin-top: 20px;
+  background-color: #64648e;
+  color: #fff;
+}
+
+ h5 {
+    font-size: 1.25rem;
+    text-align: left;
+  }

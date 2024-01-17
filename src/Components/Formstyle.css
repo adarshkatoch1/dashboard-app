@@ -1,0 +1,104 @@
+form {
+  background-color: #f4f4f3a3;
+  height: auto;
+  width: 500px;
+  border: 1px solid #000000;
+  border-radius: 22px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: px;
+}
+
+form label {
+  padding: 2px;
+}
+
+form input {
+  padding: 9px;
+  width: 251px;
+}
+h5 {
+  font-size: 1.25rem;
+  margin-right: 157px;
+  margin-top: 10px;
+}
+
+#btn
+{
+  padding: 12px;
+  background-color: rebeccapurple;
+  color: whitesmoke;
+  width: 178px;
+  margin: 10px;
+}
+
+.form-container
+{
+  background-color: blueviolet;
+}
+
+
+.form-container2
+{
+  height: auto;
+  background-color: blueviolet;
+
+}
+
+.form2{
+  width: 500px;
+  border: 1px solid #000000;
+  border-radius: 22px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: px;
+}
+
+.form2 label {
+  padding: 31px;
+}
+
+.form2 input {
+  padding: 9px;
+  width: 251px;
+}
+
+ h3 {
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  width: 12%;
+  margin: auto;
+    margin-top: auto;
+  margin-top: auto;
+  margin-top: 20px;
+
+ }
+
+ nav ul li{
+  list-style: none;
+ }
+
+ a {
+  text-decoration: none;
+  color: #46438a;
+  margin-right: 20px;
+  font-size: 15px;
+ }
+ nav ul{
+  margin-top: 11px;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+ }
+
+
+ /* Required styling....*/
+
+ .form-errors {
+  color: red;
+  position: relative;
+  bottom: 32px;
+  font-size: 15px;
+}

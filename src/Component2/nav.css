@@ -1,0 +1,59 @@
+* 
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header .dot
+{
+    color: red;
+}
+
+.header .logo-col h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+}
+
+.container .row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-col img {
+    height: 60px;
+    width: 60px;
+}
+
+.navbar ul 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar ul li
+{
+    list-style: none;
+    color:gray
+   
+}
+
+.navbar ul li:hover 
+{
+    color:black;
+    border-bottom: 1px solid red;
+    transition: all 0.3s ease-in-out 0s;
+  
+}
+
+#btn
+{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    border: 0;
+}

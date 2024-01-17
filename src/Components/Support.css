@@ -1,0 +1,54 @@
+.steps-section h2 {
+    color: #fff;
+    font-size: 64px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+
+  .support h4{
+    font-size: 28px;
+  font-weight: 600;
+  color: #43AAE0;
+  text-align: center;
+  }
+
+  .support p
+  {
+    color: #fff;
+  font-size: 18px;
+  text-align: center;
+  }
+
+  .get-started-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 30px;
+    width: 900px;
+    max-width: 100%;
+    margin: 35px auto;
+  }
+
+  .get-started-list li
+  {
+        width: 33.33%;
+        display: block;
+        padding: 0px 10px;
+        margin-bottom: 20px;
+      }
+  
+
+    .get-started-list  .inner-started
+      {
+        border: 1px solid #43AAE0;
+  height: 100%;
+  padding: 15px;
+    padding-bottom: 15px;
+  padding-bottom: 15px;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+  padding-bottom: 30px;
+  position: relative;
+      }
