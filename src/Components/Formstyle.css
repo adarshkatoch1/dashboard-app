@@ -102,3 +102,21 @@ h5 {
   bottom: 32px;
   font-size: 15px;
 }
+
+
+/*error message styling */
+.form-errors
+{
+  color: red;
+  margin-top: 37px;
+  font-size: 18px;
+}
+
+#btn
+{
+  padding: 12px;
+  background-color: #338199;
+  color: whitesmoke;
+  width: 178px;
+  margin: 10px;
+}

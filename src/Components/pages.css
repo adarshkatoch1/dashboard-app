@@ -1,0 +1,110 @@
+/* styles.css */
+
+/* Add this style for the ".add-btn" */
+.add-btn {
+  padding: 11px;
+  margin-left: 88%;
+  width: 11%;
+  border-radius: 10px;
+  background-color: #007bff;; /* Green background color */
+  color: white; /* Text color */
+  font-size: 14px; /* Font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Add hover effect for the ".add-btn" */
+.add-btn:hover {
+  background-color: #1a64b2; /* Darker green on hover */
+}
+
+
+
+.table-container
+{
+  background-color: rgba(225, 163, 234, 0.28);
+  border: 1px solid;
+  width: 81%;
+  margin-top: 31px;
+  margin-left: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* styles.css */
+
+/* styles.css */
+
+.form-container2
+{
+  max-width: 505px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #c69be396;
+}
+
+.form-container2 label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left; /* Align label text to the left */
+}
+
+.form-container2 input,
+.form-container2 select {
+  width: calc(100% - 16px); /* Adjusted width to account for padding */
+  padding: 10px; /* Increased padding for better spacing */
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container2 input[type="submit"] {
+  background-color:#266fc3;
+  color: white;
+  border: none;
+  padding: 12px 24px; /* Adjusted padding for the submit button */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+  margin: auto;
+}
+
+.form-container2 input[type="submit"]:hover {
+  background-color: #12437c;
+}
+
+/* Add more styles as needed */
+/* styles.css */
+
+/* Add this style for the "Edit" button */
+.table-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 38%;
+}
+
+/* Add hover effect for the "Edit" button */
+.table-container button:hover {
+  background-color: #0056b3;
+}
+
+
+.success-message
+{
+  color: #1E1D1D;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+

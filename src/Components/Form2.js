@@ -17,9 +17,11 @@ const initialValues = {
 
 const MyFormComponent = () => {
 
+  const [emailNotExists, setEmailNotExists] = useState(false);
+
 const navigate =useNavigate();
 
-//  //Handle sign-up logic here..
+ //Handle sign-up logic here..
 //  const handleSignUp = () => {
 //   //handle sign-up logic here..
 
@@ -29,16 +31,51 @@ const navigate =useNavigate();
  
 
   // Handle form input changes
-  const{values, errors, touched, handleChange, handleBlur, handleSubmit} = useFormik({
+  const { values, errors, touched, handleChange, handleBlur, handleSubmit } = useFormik({
     initialValues: initialValues,
     validationSchema: signupSchema,
-    onSubmit: (values, action) => {
-      console.log(values)
-      
-     action.resetForm()
-    }
-  })
+    onSubmit: async (values, action) => {
+      try {
+        const response = await fetch('http://localhost:8000/Form/register.php', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(values),
+        });
+  
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+  
+        const responseData = await response.json();
+        console.log(responseData.message);
+        //setEmailNotExists(true);
+        if(responseData.message==true)
+        {
+          
+          setEmailNotExists(true);
+        }else{
+          action.resetForm();
+         navigate('/Form');
 
+        }
+  
+        // You can handle the response data here
+  
+        // Reset the form after successful submission
+       
+  
+        // If you want to navigate after submission, you can use a navigation library
+        // For example, if you are using React Router, you can navigate like this:
+       
+  
+      } catch (error) {
+        console.error('Error:', error.message);
+      }
+    },
+  });
+  
   // Handle form submission
   // const handleSubmit= async (event) => {
   //   event.preventDefault();
@@ -54,6 +91,8 @@ const navigate =useNavigate();
 
   //     if (!response.ok) {
   //       throw new Error('Network response was not ok');
+  //     }else{
+  //       navigate('/Form');
   //     }
 
   //     const responseData = await response.json();
@@ -68,18 +107,18 @@ const navigate =useNavigate();
 
   //Handler for button click
 
-  const handleSignUp = () => {
-    // Check if all required fields are filled
-    if (values.fname.trim() !== '' && values.lname.trim() !== '' && values.email.trim() !== "" && values.phone.trim() !== "" && values.password.trim() !== "" ) {
-      // If all fields are filled, navigate
-      navigate('/Form');
-    } else {
-      // If any required field is not filled, show an error or take appropriate action
-      alert('Please fill in all required fields.');
-    }
-  };
+  // const handleSignUp = () => {
+  //   // Check if all required fields are filled
+  //   if (values.fname.trim() !== '' && values.lname.trim() !== '' && values.email.trim() !== "" && values.phone.trim() !== "" && values.password.trim() !== "" ) {
+  //     // If all fields are filled, navigate
+    
+  //   } else {
+  //     // If any required field is not filled, show an error or take appropriate action
+  //     alert('Please fill in all required fields.');
+  //   }
+  // };
 
-
+  
 
 
 
@@ -128,6 +167,9 @@ const navigate =useNavigate();
         />
       </label>
       <br /><br></br>
+      {emailNotExists && (
+              <p className='form-errors'>Email already exists!</p>
+            )}
       { errors.email && touched.email ? ( <p className='form-errors'>{errors.email}</p>) :null}
       <label>
       <h5>Phone:</h5>
@@ -154,11 +196,11 @@ const navigate =useNavigate();
       <br /> <br></br>
       { errors.password && touched.password ? ( <p className='form-errors'>{errors.password}</p>) :null}
 
-      <button type="submit" id='btn' onClick={handleSignUp} >Submit</button>
+      <button type="submit" id='btn'  >Submit</button>
+    
     </form>
     </div>
-  );
-};
-
+  )
+  }
 export default MyFormComponent;
 

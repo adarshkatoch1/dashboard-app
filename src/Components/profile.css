@@ -1,0 +1,149 @@
+/* profileStyles.css */
+
+/* ... (existing styles) */
+
+/* Sidebar styles */
+.sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #343a40; /* Dark background color */
+    padding-top: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); /* Sidebar shadow */
+  }
+  
+  .sidebar ul.nav.flex-column {
+    padding-left: 10px;
+  }
+  
+  .sidebar .nav-link {
+    color: #ced4da; /* Text color */
+    border-bottom: 1px solid #495057; /* Border color between links */
+  }
+  
+  .sidebar .nav-link.active {
+    font-weight: bold;
+    background-color: #495057; /* Background color for the active link */
+    color: #fff; /* Text color for the active link */
+  }
+  
+  .logout-button {
+    background-color: #0056b3; ;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+  }
+
+  .logout-button:hover 
+  {
+    background-color: #dc3545;
+      /* Darker blue color on hover */
+  }
+
+
+  /* ... (existing styles) */
+  
+  /*Form styling start here...*/
+
+  /* profile.css */
+
+/* ... (existing styles) */
+
+/* Style input inside the form */
+/* form input {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    outline: none; 
+  } */
+  
+  /* Add some styles for the submit button */
+  form button {
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text color */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .edit-button
+{
+  background-color: #344148;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 14%;
+  margin-left: 20px;
+}
+  .edit-button :hover
+  {
+    background-color: blue;
+  }
+  /* Add hover effect to the button */
+  form button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+  }
+
+  form input{
+    padding: 11px;
+  width: 251px;
+  margin: 20px;
+  color: seagreen;
+
+  }
+
+
+  .form-errors 
+  {
+    color: red;
+  }
+
+  /* form edit validation styling start here...*/
+
+  .error {
+    color: red;
+  }
+
+  /* Add this to your external CSS file or inside the style tag in your React component */
+.profile-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Add more styling as needed */
+
+.profile-picture img {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  border-radius: 50%; /* To make it a circular image */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  margin-bottom: 15px;
+}
+
+
+.profile-container
+{
+  background-color: #b6c5d759;
+  border: 1px solid #8787c8;
+  border-radius: 2px;
+}

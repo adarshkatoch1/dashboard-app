@@ -1,0 +1,22 @@
+.footer-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-container td
+{
+    color: black;
+}
+
+.footer-container td:hover
+{
+    color: white;
+}
+
+.footer-container td
+{
+    display: flex;
+}
